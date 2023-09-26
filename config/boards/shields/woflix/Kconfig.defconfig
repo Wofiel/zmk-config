@@ -1,0 +1,28 @@
+
+if SHIELD_WOFLIX_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Woflix"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+
+if SHIELD_WOFLIX_RIGHT
+
+#config ZMK_KEYBOARD_NAME
+#	default "Woflix (Right)"
+
+#config USB
+#	default y
+
+endif
+
+if SHIELD_WOFLIX_LEFT || SHIELD_WOFLIX_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
